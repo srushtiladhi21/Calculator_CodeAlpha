@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <div class="app-container">
+      <div class="topbar">
+        <a href="#" class="brand" aria-label="Calculator Home">
+          <span class="brand-icon">⌁</span>
+          <span>calc<span class="brand-light">+</span></span>
+        </a>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          <span>READY</span>
+        </div>
+      </div>
+
+      <div class="calculator-card">
+        <div class="card-heading">
+          <div>
+            <div class="eyebrow">SMART</div>
+            <h1>Calculator</h1>
+          </div>
+          <div class="calculator-icon">⌫</div>
+        </div>
+
+        <div class="display">
+          <div class="display-top">
+            <span class="display-label">LIVE</span>
+            <span class="live-indicator">ON</span>
+          </div>
+
+          <div id="expression" class="expression">Ready for input</div>
+
+          <div class="result-row">
+            <span class="result-symbol">=</span>
+            <span id="result" class="result">0</span>
+          </div>
+        </div>
+
+        <div id="keypad" class="keypad">
+          <button class="key utility" type="button" data-action="clear">AC</button>
+          <button class="key delete" type="button" data-action="delete">DEL</button>
+          <button class="key operator" type="button" data-operator="÷">÷</button>
+          <button class="key operator" type="button" data-operator="×">×</button>
+
+          <button class="key" type="button" data-number="7">7</button>
+          <button class="key" type="button" data-number="8">8</button>
+          <button class="key" type="button" data-number="9">9</button>
+          <button class="key operator" type="button" data-operator="−">−</button>
+
+          <button class="key" type="button" data-number="4">4</button>
+          <button class="key" type="button" data-number="5">5</button>
+          <button class="key" type="button" data-number="6">6</button>
+          <button class="key operator" type="button" data-operator="+">+</button>
+
+          <button class="key" type="button" data-number="1">1</button>
+          <button class="key" type="button" data-number="2">2</button>
+          <button class="key" type="button" data-number="3">3</button>
+          <button class="key equals" type="button" data-action="equals">=</button>
+
+          <button class="key" type="button" data-number="0" style="grid-column: span 2;">0</button>
+          <button class="key" type="button" data-action="decimal">.</button>
+        </div>
+
+        <div class="calculator-footer">
+          <span><span class="footer-dot"></span> CALCULATOR READY</span>
+          <span>v1.0</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
